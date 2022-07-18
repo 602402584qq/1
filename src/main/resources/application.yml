@@ -1,0 +1,14 @@
+# server config
+server:
+  port: 3090
+  servlet:
+    context-path: /spbi
+  # spring config
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: @profileActive@
