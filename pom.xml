@@ -81,11 +81,11 @@
             <artifactId>diboot-iam-spring-boot-starter</artifactId>
             <version>${diboot.version}</version>
         </dependency>
-        <!--    验证码    -->
+        <!-- diboot-file文件处理组件 -->
         <dependency>
-            <groupId>com.github.whvcse</groupId>
-            <artifactId>easy-captcha</artifactId>
-            <version>1.6.2</version>
+            <groupId>com.diboot</groupId>
+            <artifactId>diboot-file-spring-boot-starter</artifactId>
+            <version>${diboot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springdoc</groupId>
@@ -107,6 +107,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.22</version>
+        </dependency>
+        <!-- 默认的验证码组件，可按需替换 -->
+        <dependency>
+            <groupId>com.pig4cloud.plugin</groupId>
+            <artifactId>captcha-core</artifactId>
+            <version>2.2.2</version>
         </dependency>
     </dependencies>
 
