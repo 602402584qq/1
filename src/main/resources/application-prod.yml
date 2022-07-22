@@ -47,7 +47,7 @@ spring:
           url: jdbc:mysql://${MYSQL_HOST:127.0.0.1}:${MYSQL_PORT:3306}/spbi?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
           driver-class-name: com.mysql.cj.jdbc.Driver
           username: ${MYSQL_USER:root}
-          password: ${MYSQL_PWD:root}
+          password: ${MYSQL_PWD:123456}
       primary: base
 
   redis:
@@ -89,7 +89,7 @@ logging:
 
 diboot:
   iam:
-    anon-urls: /swagger**/**,/webjars/**,/v3/**,/doc.html
+    anon-urls: /**
     enable-permission-check: false
 
   # Diboot Devtools 配置参数
